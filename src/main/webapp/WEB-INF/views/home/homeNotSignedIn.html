@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Welcome to the Spring MVC Quickstart application! Get started quickly by signing up!</title>
+    <title>Utility Swap</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
     <link href="../../../resources/css/core.css" rel="stylesheet" media="screen" th:href="@{/resources/css/core.css}" />
@@ -10,18 +10,39 @@
 </head>
 <body>
 <div th:replace="fragments/header :: header">Header</div>
-<div class="container">
+<div class="home-container">
     <div class="text-center">
-        <h1>Test</h1>
-        <p class="lead">
-            Welcome to the Spring MVC Quickstart application!
-            Get started quickly by signing up.
-        </p>
-        <p>
-            <a href="/signup" th:href="@{/signup}" class="btn btn-success btn-lg">Sign up</a>
-        </p>
+        <h2>Save money by swapping your utilities</h2>
+        <p class="lead">Switch your energy in minutes!</p>
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2">
+        <input type="submit" value="Start my energy comparison" class="btn btn-block btn-info"/>
+    	</div>
+    	<div class="col-lg-5"></div>
     </div>
-    <div th:replace="fragments/footer :: footer">&copy; 2013 The Static Templates</div>
 </div>
+    <div class="col-sm-12">
+    	<div class="col-sm-4" align="center">
+    		<h3>
+    		<span class="glyphicon glyphicon-pencil"></span>
+    		Enter your details
+    		</h3>
+    		<p>It only take a few minutes</p>
+    	</div>
+    	<div class="col-sm-4" align="center">
+    		<h3>
+    		<span class="glyphicon glyphicon-list"></span>
+    		Compare deals
+    		</h3>
+    		<p>Select a plan right for you</p>
+    	</div>
+    	<div class="col-sm-4" align="center">
+    		<h3>
+    		<span class="glyphicon glyphicon-ok"></span>
+    		Switch today
+    		</h3>
+    		<p>We take care of the rest</p>
+    	</div>
+    </div>
 </body>
 </html>
