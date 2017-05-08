@@ -18,8 +18,8 @@ body {
 }
 
 .home-container {
-	padding-top: 165px;
-    padding-bottom: 165px;
+	padding-top: 170px;
+    padding-bottom: 170px;
   	position: relative;
   	text-align: center;
 }
@@ -43,5 +43,14 @@ body {
 .navbar-color {
 	border-radius: 0px;
 	background-color: #0F0F10;
-	border-bottom: 2px solid #D85959;
+	border-bottom: 3px solid #D85959;
+}
+
+.home-banner {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #99e2ff;
 }
