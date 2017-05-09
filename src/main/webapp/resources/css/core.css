@@ -18,15 +18,14 @@ body {
 }
 
 .home-container {
-	padding-top: 170px;
-    padding-bottom: 170px;
+	padding-top: 172px;
+    padding-bottom: 172px;
   	position: relative;
   	text-align: center;
 }
 
 .home-container .home-img {
   position: absolute;
-  z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
@@ -34,7 +33,7 @@ body {
   background-image: url('../images/lights.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 45% 45%;
+  background-position: 40% 40%;
   opacity: .2;
   width: 100%;
   height: 100%;
@@ -53,4 +52,22 @@ body {
 	left: 0;
 	right: 0;
 	background-color: #99e2ff;
+	opacity: .9;
+}
+
+p {
+    font-size: 16px;
+}
+
+.navbar-nav > li > a{
+	padding-top:22px; 
+	padding-bottom:22px;
+}
+
+.navbar{
+	min-height:44px;
+}
+
+.nav a{
+	font-size: 1.2em;
 }
