@@ -18,8 +18,8 @@ body {
 }
 
 .home-container {
-	padding-top: 172px;
-    padding-bottom: 172px;
+	padding-top: 175px;
+    padding-bottom: 175px;
   	position: relative;
   	text-align: center;
 }
@@ -42,7 +42,7 @@ body {
 .navbar-color {
 	border-radius: 0px;
 	background-color: #0F0F10;
-	border-bottom: 3px solid #D85959;
+	border-bottom: 2px solid #D85959;
 }
 
 .home-banner {
@@ -52,7 +52,6 @@ body {
 	left: 0;
 	right: 0;
 	background-color: #99e2ff;
-	opacity: .9;
 }
 
 p {
@@ -70,4 +69,34 @@ p {
 
 .nav a{
 	font-size: 1.2em;
+}
+
+.message-box {
+  border-left: 1px solid #D85959;
+  border-right: 1px solid #D85959;
+  border-top: 1px solid #D85959;
+  border-bottom: 1px solid #D85959;
+}
+
+.footer-bottom {
+    background-color: #0F0F10;
+    min-height: 30px;
+    width: 100%;
+    clear:both;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
 }
