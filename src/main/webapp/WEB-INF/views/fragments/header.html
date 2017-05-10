@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+	<script src="../../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top navbar-color" th:fragment="header">
@@ -16,18 +17,13 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#" th:href="@{/}">utilityswap.co.uk</a></li>
-                <li><a href="#gas">Gas &amp; electricity</a></li>
-                <li><a href="#broadband">Broadband, TV &amp; phone</a></li>
-                <li><a href="#mobiles">Mobiles</a></li>
-                <li><a href="#banking">Banking</a></li>
-                <li><a href="#insurance">Insurance</a></li>
+                <li><a href="#gas" data-toggle="modal" data-target="#noticeModal">Gas &amp; electricity</a></li>
+                <li><a href="#broadband" data-toggle="modal" data-target="#noticeModal">Broadband, TV &amp; phone</a></li>
+                <li><a href="#mobiles" data-toggle="modal" data-target="#noticeModal">Mobiles</a></li>
+                <li><a href="#banking" data-toggle="modal" data-target="#noticeModal">Banking</a></li>
+                <li><a href="#insurance" data-toggle="modal" data-target="#noticeModal">Insurance</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-            	<li>
-                <a href="#search">
-                	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                </a>
-                </li>
                 <li th:if="${#authorization.expression('!isAuthenticated()')}">
                     <a href="/signin" th:href="@{/signin}">
                         <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;Sign in
