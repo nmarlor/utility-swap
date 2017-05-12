@@ -18,13 +18,12 @@ body {
 }
 
 .home-container {
-	padding-top: 175px;
-    padding-bottom: 175px;
+	padding-top: 240px;
+    padding-bottom: 240px;
   	position: relative;
-  	text-align: center;
 }
 
-.home-container .home-img {
+.home-img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -34,15 +33,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 40% 40%;
-  opacity: .2;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 .navbar-color {
 	border-radius: 0px;
-	background-color: #0F0F10;
-	border-bottom: 2px solid #D85959;
+	background-color: #ffffff;
+	border-bottom: 2px solid #1e73be;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #1e73be;
+    color: #1e73be;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #ffffff;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #1e73be;
 }
 
 .home-banner {
@@ -51,7 +63,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #92B558;
+	background-color: #1e73be;
 }
 
 p {
@@ -84,7 +96,7 @@ p {
 }
 
 .footer-bottom {
-    background-color: #0F0F10;
+    background-color: #101012;
     min-height: 30px;
     width: 100%;
     clear:both;
@@ -108,8 +120,44 @@ p {
 
 .p-padding {
 	padding-bottom: 8px;
+	color: white;
 }
 
 .modal {
 	margin-top: 80px;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #1e73be;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-brand .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: #1e73be;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #1e73be;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #9d9d9d;
+    background-color: #fff;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #9d9d9d;
+    white-space: nowrap;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #1e73be;
+    text-decoration: none;
+    background-color: #f5f5f5;
 }
