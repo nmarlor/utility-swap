@@ -23,14 +23,14 @@
                 <li><a href="#broadband" data-toggle="modal" data-target="#noticeModal">Broadband, TV &amp; phone</a></li>
                 <li><a href="#gas" data-toggle="modal" data-target="#noticeModal">Mobiles</a></li>
             	<li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Finance<b class="caret"></b></a>
+	              <a href="#finance" class="dropdown-toggle" data-toggle="dropdown">Finance<b class="caret"></b></a>
 	              <ul class="dropdown-menu">
 	                <li><a href="#banking" data-toggle="modal" data-target="#noticeModal">Banking</a></li>
 	                <li><a href="#insurance" data-toggle="modal" data-target="#noticeModal">Insurance</a></li>
 	              </ul>
             	</li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <!-- <ul class="nav navbar-nav navbar-right">
                 <li th:if="${#authorization.expression('!isAuthenticated()')}">
                     <a href="/signin" th:href="@{/signin}">
                         <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;Sign in
@@ -42,7 +42,22 @@
                     </a>
                     <form style="visibility: hidden" id="form" method="post" action="#" th:action="@{/logout}"></form>
                 </li>
+            </ul> -->
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li th:if="${#authorization.expression('!isAuthenticated()')}">
+                    <a href="#signIn" data-toggle="modal" data-target="#signInModal">
+                        <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;Sign in
+                    </a>
+                </li>
+                <li th:if="${#authorization.expression('isAuthenticated()')}">
+                    <a href="/logout" th:href="@{#}" onclick="$('#form').submit();">
+                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>&nbsp;Logout
+                    </a>
+                    <form style="visibility: hidden" id="form" method="post" action="#" th:action="@{/logout}"></form>
+                </li>
             </ul>
+            
         </div>
         <!--/.nav-collapse -->
     </div>

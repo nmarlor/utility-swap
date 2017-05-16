@@ -15,9 +15,9 @@
     <div class="home-img"></div>
     <div class="col-sm-5"></div>
     <div class="col-sm-2"></div>
-   	<div class="col-sm-5">
-	   	<h1 style="color:white;">Beat the energy price rises</h1>
-		<h1 style="color:white;" class="lead">Swap your utilities in minutes!</h1>
+   	<div class="col-sm-4 speech" align="center">
+	   	<h1 style="color:white;">Save money on your utilities</h1>
+		<h1 style="color:white;" class="lead">Swap in minutes</h1>
 		<button type="button" class="compare-btn btn-danger" data-toggle="modal" data-target="#noticeModal">Start my energy comparison</button>
 	 </div>
 </div>
@@ -28,33 +28,33 @@
 		<span class="glyphicon glyphicon-pencil"></span>
 		Enter your details
 		</h3>
-		<p class="p-padding">It only takes a few minutes</p>
+		<p style="color:white;">Quickly, easily &amp; securely</p>
 	</div>
 	<div class="col-sm-4" align="center">
 		<h3 style="color:white;">
 		<span class="glyphicon glyphicon-list"></span>
 		Compare deals
 		</h3>
-		<p class="p-padding">Select a plan right for you</p>
+		<p style="color:white;">Select a plan right for you</p>
 	</div>
 	<div class="col-sm-4" align="center">
 		<h3 style="color:white;">
 		<span class="glyphicon glyphicon-ok"></span>
-		Switch today
+		Swap utilities
 		</h3>
-		<p class="p-padding">We take care of the rest</p>
+		<p class="p-padding">Start saving money</p>
 	</div>
 </div>
 <div class="col-sm-12 message-box-padding">
 	<div class="col-sm-offset-3 col-sm-6 message-box" align="center">
 		<h3>Thank you for visiting utilityswap.co.uk</h3>
-		<p>You can expect to see the site fully up and running in the next couple of months, but first I'd like to tell you a bit about ourselves and what we are looking to provide for you.</p>
-		<p>Here at utilityswap.co.uk, we aim to save you money on your utilities, by finding you the best deals for switching gas and electricity, broadband, TV and phone, mobiles, banking and insurance providers.</p>
+		<p>You can expect to see the website fully up and running in the next couple of months, but first I'd like to tell you a bit about ourselves and what we are looking to provide for you.</p>
+		<p>Here at utilityswap.co.uk, we aim to save you money on your utilities, by finding the best deals for switching gas and electricity, broadband, TV and phone, mobiles, banking and insurance providers.</p>
 		<p>This will be done in a few simple steps consisting of entering your details, checking out our returned deals, then signing up to a deal perfect for you. It's that simple!</p>
 		<p>We look forward to helping you save money in the future.</p>
 	</div>
 </div>
-<!-- Modal -->
+<!-- notice modal -->
 <div id="noticeModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -73,6 +73,25 @@
     </div>
   </div>
 </div>
-<div th:replace="fragments/footer :: footer">Footer</div>
+<!-- sign in modal -->
+<div id="signInModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Sign in</h4>
+      </div>
+      <div class="modal-body">
+        <p>As the website is still undergoing maintenance, you can not sign in/ sign up at this moment in time.</p>
+        <p>Our new sign in system will allow you to manage your account and current plans with us, ensuring the best deals possible are found across all of your utilities.</p>
+      	<p>Thank you for your patience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<footer th:replace="fragments/footer :: footer">Footer</footer>
 </body>
 </html>
