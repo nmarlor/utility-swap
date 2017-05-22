@@ -12,6 +12,7 @@
 <body>
 <div th:replace="fragments/header :: header">Header</div>
 <div class="home-container">
+	<form method="post" th:action="@{/}" th:object="${postcodeForm}">
     <div class="home-img"></div>
     <div class="col-sm-5"></div>
     <div class="col-sm-2"></div>
@@ -20,13 +21,14 @@
 		<h1 style="color:white;" class="lead">Swap in minutes</h1>
 		<div class="col-sm-offset-1 col-sm-10">
 			<div class="col-sm-6">
-				<input type="text" style="text-align:center;" class="form-control postcode-input" id="postcode-input" placeholder="Enter your postcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your postcode'"/>
+				<input type="text" style="text-align:center;" class="form-control postcode-input" id="postcode-input" required="required" placeholder="Enter your postcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your postcode'"/>
 			</div>
 			<div class="col-sm-6">
-				<button type="submit" class="compare-btn btn-danger" data-toggle="modal" data-target="#noticeModal">Compare prices <span class="glyphicon glyphicon-chevron-right"></span></button>
+				<button type="submit" class="compare-btn btn-danger">Compare prices <span class="glyphicon glyphicon-chevron-right"></span></button>
 			</div>
 		</div>
 	 </div>
+	 </form>
 </div>
 <div class="col-sm-12">
 	<div class="home-banner"></div>
